@@ -395,6 +395,9 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
   .text-\[11px\] {
     font-size: 11px;
   }
@@ -472,6 +475,9 @@
   .text-\[\#27b7e8\] {
     color: #27b7e8;
   }
+  .text-\[\#222\] {
+    color: #222;
+  }
   .text-\[\#0785c8\] {
     color: #0785c8;
   }
@@ -531,6 +537,9 @@
     }
   }
   @media (width >= 40rem) {
+    .sm\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
     .sm\:block {
       display: block;
     }
@@ -606,6 +615,9 @@
     }
     .lg\:order-2 {
       order: 2;
+    }
+    .lg\:col-span-1 {
+      grid-column: span 1 / span 1;
     }
     .lg\:min-h-\[650px\] {
       min-height: 650px;
