@@ -383,8 +383,14 @@
   .max-w-\[420px\] {
     max-width: 420px;
   }
+  .max-w-\[430px\] {
+    max-width: 430px;
+  }
   .max-w-\[460px\] {
     max-width: 460px;
+  }
+  .max-w-\[470px\] {
+    max-width: 470px;
   }
   .max-w-\[500px\] {
     max-width: 500px;
@@ -949,6 +955,9 @@
     .sm\:mx-auto {
       margin-inline: auto;
     }
+    .sm\:mt-20 {
+      margin-top: calc(var(--spacing) * 20);
+    }
     .sm\:block {
       display: block;
     }
@@ -1041,6 +1050,9 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
     .md\:block {
       display: block;
     }
@@ -1112,11 +1124,17 @@
     .lg\:grid-cols-\[1fr_1\.3fr\] {
       grid-template-columns: 1fr 1.3fr;
     }
+    .lg\:grid-cols-\[1fr_1fr\] {
+      grid-template-columns: 1fr 1fr;
+    }
     .lg\:justify-end {
       justify-content: flex-end;
     }
     .lg\:justify-start {
       justify-content: flex-start;
+    }
+    .lg\:gap-14 {
+      gap: calc(var(--spacing) * 14);
     }
     .lg\:gap-16 {
       gap: calc(var(--spacing) * 16);
@@ -1162,6 +1180,9 @@
     }
   }
   @media (width >= 80rem) {
+    .xl\:col-span-1 {
+      grid-column: span 1 / span 1;
+    }
     .xl\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
