@@ -263,6 +263,12 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-\[42px\] {
+    height: 42px;
+  }
+  .h-\[54px\] {
+    height: 54px;
+  }
   .h-\[82px\] {
     height: 82px;
   }
@@ -323,6 +329,9 @@
   .w-14 {
     width: calc(var(--spacing) * 14);
   }
+  .w-\[54px\] {
+    width: 54px;
+  }
   .w-full {
     width: 100%;
   }
@@ -349,6 +358,9 @@
   }
   .max-w-\[200px\] {
     max-width: 200px;
+  }
+  .max-w-\[220px\] {
+    max-width: 220px;
   }
   .max-w-\[250px\] {
     max-width: 250px;
@@ -455,10 +467,20 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  :where(.space-y-2 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+  }
   :where(.space-y-3 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-4 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
   }
   .overflow-hidden {
     overflow: hidden;
@@ -557,6 +579,14 @@
     --tw-gradient-from: #5bc3ea;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .from-\[\#63c1ea\] {
+    --tw-gradient-from: #63c1ea;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[\#0b86cb\] {
+    --tw-gradient-to: #0b86cb;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .to-\[\#0787c8\] {
     --tw-gradient-to: #0787c8;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -618,6 +648,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
   .pb-14 {
     padding-bottom: calc(var(--spacing) * 14);
   }
@@ -673,6 +706,9 @@
   .text-\[27px\] {
     font-size: 27px;
   }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
   .text-\[31px\] {
     font-size: 31px;
   }
@@ -708,6 +744,10 @@
     --tw-leading: 1.25;
     line-height: 1.25;
   }
+  .leading-\[1\.35\] {
+    --tw-leading: 1.35;
+    line-height: 1.35;
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -731,6 +771,9 @@
   .tracking-\[-0\.5px\] {
     --tw-tracking: -0.5px;
     letter-spacing: -0.5px;
+  }
+  .text-\[\#0d84ca\] {
+    color: #0d84ca;
   }
   .text-\[\#00a991\] {
     color: #00a991;
@@ -824,6 +867,10 @@
   }
   .shadow-\[0_4px_18px_rgba\(0\,0\,0\,0\.08\)\] {
     --tw-shadow: 0 4px 18px var(--tw-shadow-color, rgba(0,0,0,0.08));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_4px_20px_rgba\(0\,0\,0\,0\.08\)\] {
+    --tw-shadow: 0 4px 20px var(--tw-shadow-color, rgba(0,0,0,0.08));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-\[0_5px_20px_rgba\(0\,0\,0\,0\.08\)\] {
@@ -980,6 +1027,9 @@
     .sm\:text-\[30px\] {
       font-size: 30px;
     }
+    .sm\:text-\[32px\] {
+      font-size: 32px;
+    }
     .sm\:text-\[34px\] {
       font-size: 34px;
     }
@@ -1005,6 +1055,9 @@
     }
     .md\:min-h-\[620px\] {
       min-height: 620px;
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .md\:text-\[23px\] {
       font-size: 23px;
@@ -1106,6 +1159,11 @@
     }
     .lg\:text-\[52px\] {
       font-size: 52px;
+    }
+  }
+  @media (width >= 80rem) {
+    .xl\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 }
